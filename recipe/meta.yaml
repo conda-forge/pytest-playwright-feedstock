@@ -1,5 +1,5 @@
 {% set name = "pytest-playwright" %}
-{% set version = "0.7.2" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pytest_playwright-{{ version }}.tar.gz
-  sha256: 247b61123b28c7e8febb993a187a07e54f14a9aa04edc166f7a976d88f04c770
+  sha256: 7888d4a2443160c82e0c506c437076679f86b36d1910427250d90fbf1843a981
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
